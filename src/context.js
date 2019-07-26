@@ -25,7 +25,7 @@ export default class RoomProvider extends Component {
   getData = async () => {
     try {
       let response = await Client.getEntries({
-        content_type: "resortBeach"
+        content_type: "resort_beach"
       });
       let rooms = this.formatData(response.items);
 
